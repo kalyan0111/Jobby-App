@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Jobby App 💼
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-featured, responsive job portal web application built with **React.js**. Jobby enables job seekers to authenticate, browse through job listings, filter opportunities based on employment type and salary brackets, search by keywords, and view detailed information for individual job postings alongside similar recommendations.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+* **User Authentication & Authorization**
+  * Secure JWT-based authentication storing tokens using `js-cookie`.
+  * Custom higher-order `ProtectedRoute` wrapper preventing unauthorized access to core application routes.
+  * Auto-redirection for authenticated users attempting to access the login page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* **Dynamic Job Search & Multi-Criteria Filtering**
+  * Simultaneous filtering by **Employment Type** (Full Time, Part Time, Freelance, Internship).
+  * Filter jobs by **Minimum Salary Range** brackets.
+  * Real-time dynamic search bar with query keyword filtering.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **Detailed Job Views & Recommendations**
+  * Dynamic routing (`/jobs/:id`) to display detailed descriptions, location, package (LPA), required skills, company details, and external links.
+  * "Similar Jobs" section rendered dynamically based on current job specifications.
 
-### `npm test`
+* **User Profile & State Handling**
+  * User profile details fetched directly from backend APIs.
+  * Comprehensive state management across **Loading** (Spinners), **Success**, **Failure** (Retry options), and **Empty Results** views.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Tech Stack & Dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **Frontend Framework:** React.js
+* **Routing:** React Router DOM (v5)
+* **Authentication:** Cookies (`js-cookie`), JSON Web Tokens (JWT)
+* **Icons & Styling:** React Icons, Pure CSS3
+* **Package Manager / Runtime:** Node.js, npm / pnpm / Bun
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📁 Project Structure
 
-### `npm run eject`
+```text
+jobby-app/
+├── public/
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+├── src/
+│   ├── Components/
+│   │   ├── Header/             # Navigation bar with brand logo & logout
+│   │   ├── Home/               # Hero section & landing view
+│   │   ├── JobItemDetails/     # Detailed job specs & similar job recommendations
+│   │   ├── Jobs/               # Main dashboard, profile section & multi-filters
+│   │   ├── Login/              # Authentication form & error alerts
+│   │   ├── NotFound/           # Fallback 404 page
+│   │   └── ProtectedRoute/     # Auth-guard route wrapper
+│   ├── App.css
+│   ├── App.js                  # Main application routing setup
+│   ├── index.js                # React DOM entry point
+│   └── setupTests.js
+├── package.json
+└── README.md
+```
+## 🔑 Demo Credentials
+Use the following test credentials on the Login page to access the application dashboard:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Username: ```rahul```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Password: ``` rahul@2021```

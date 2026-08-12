@@ -1,4 +1,4 @@
-# Jobby App 💼 [Live Demo](jobby-app-git-main-akalyan0111-6926s-projects.vercel.app)
+# Jobby App 💼 [Live Demo](jobby-app-liard-ten.vercel.app)
 
 A full-featured, responsive job portal web application built with **React.js**. Jobby enables job seekers to authenticate, browse through job listings, filter opportunities based on employment type and salary brackets, search by keywords, and view detailed information for individual job postings alongside similar recommendations.
 
@@ -67,5 +67,5 @@ Username: ```rahul```
 
 Password: ``` rahul@2021```
 
-[Live Demo](jobby-app-git-main-akalyan0111-6926s-projects.vercel.app)
+[Live Demo](jobby-app-liard-ten.vercel.app)
 

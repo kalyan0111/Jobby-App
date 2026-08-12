@@ -138,8 +138,8 @@ class Jobs extends Component {
     return (
       <div className='profileCard'>
         <img src={profileDetails.profileImageUrl} alt='profile' />
-        <h1>{profileDetails.name}</h1>
-        <p>{profileDetails.shortBio}</p>
+        <h1>Kalyan Annaepu</h1>
+        <p>Lead Software Developer</p>
       </div>
     )
   }

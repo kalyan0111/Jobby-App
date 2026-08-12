@@ -1,0 +1,68 @@
+.jobitemContainer {
+  background-color: #000000;
+  min-height: 100vh;
+}
+
+.jobItemCard {
+  display: flex;
+  flex-direction: column;
+  color: #f1f5f9;
+  background-color: #202020;
+  margin: 20px 50px;
+  padding: 25px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.separatorr {
+  height: 1px;
+  background-color: #7e858e;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.skillsUl {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.skillsList {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+
+.SkillsImage {
+  height: 5vh;
+}
+
+.skillName {
+  padding-left: 10px;
+}
+
+.lifeAtCompanyDiv {
+  display: flex;
+}
+
+.similarJobDiv {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.similarJobsLi {
+  background-color: #202020;
+  padding: 25px;
+  margin: 20px 50px;
+  color: #f1f5f9;
+  flex-grow: 1;
+  border-radius: 10px;
+}
+
+.similsrdescriptionhead {
+  font-size: 20px;
+  margin-left: 50px;
+  color: #f1f5f9;
+}

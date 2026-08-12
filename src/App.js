@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import {Route, Switch,Redirect} from 'react-router-dom'
+import ProtectedRoute from './Components/ProtectedRoute'
+import Login from './Components/Login'
+import Home from './Components/Home'
+import JobItemDetails from './Components/JobItemDetails'
+import Jobs from './Components/Jobs'
+import NotFound from './Components/NotFound'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// These are the lists used in the application. You can move them to any component needed.
 
-export default App;
+// Replace your code here
+const App = () => (
+  <Switch>
+    <Route exact path="/login" component={Login} />
+    <ProtectedRoute exact path="/" component={Home} />
+    <ProtectedRoute exact path="/jobs" component={Jobs} />
+    <ProtectedRoute exact path="/jobs/:id" component={JobItemDetails} />
+    <Route exact path="/not-found" component={NotFound} />
+    <Redirect to="/not-found" />
+  </Switch>
+)
+
+export default App

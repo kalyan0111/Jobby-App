@@ -1,0 +1,61 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  min-height: 100vh;
+}
+
+.LoginCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #272727;
+  padding: 40px;
+  height: 50vh;
+  width: 50vh;
+  border-radius: 10px;
+  color: #f8fafc;
+}
+
+.LoginjobbyLogo {
+  height: 5vh;
+  width: 50%;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.input-label {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.Input-Field {
+  height: 40px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #64748b;
+  color: #f8fafc;
+  padding-left: 15px;
+  outline: none;
+}
+
+.loginbuttonDiv {
+  align-self: center;
+}
+
+.LoginButton {
+  background-color: #4f46e5;
+  color: #f8fafc;
+  border: solid 0px;
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin-top: 15px;
+}
+
+.errorMsg {
+  color: #ff0b37;
+  font-size: 15px;
+}

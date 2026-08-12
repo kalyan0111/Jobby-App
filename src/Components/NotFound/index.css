@@ -1,0 +1,10 @@
+.Not-found-Container {
+  min-height: 100vh;
+  background-color: #202020;
+  font-family: Roboto;
+  color: #f1f5f9;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

@@ -69,3 +69,9 @@ Password: ``` rahul@2021```
 
 [Live Demo](https://jobby-app-liard-ten.vercel.app/login)
 
+<img width="1911" height="967" alt="Screenshot 2026-08-12 063935" src="https://github.com/user-attachments/assets/bd0c8523-094a-4981-b35d-1908c971b17a" />
+
+<img width="1919" height="968" alt="Screenshot 2026-08-12 063953" src="https://github.com/user-attachments/assets/00eae848-c7ec-43f7-b6fa-aaada4a560b8" />
+
+<img width="1919" height="962" alt="Screenshot 2026-08-12 064014" src="https://github.com/user-attachments/assets/184c226a-2c12-4915-b6c8-2d19baa6c3cf" />
+
